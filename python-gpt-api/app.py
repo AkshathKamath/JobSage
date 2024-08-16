@@ -2,6 +2,7 @@ from fastapi import FastAPI, Request
 import uvicorn
 from config.config import file_path
 from pdf.pdf_handling import extract_text_from_pdf
+from resume.resume_improve import improve_resume
 from resume.resume_summarize import summarize_resume
 from resume.resume_score import score_resume
 from resume.resume_compare import compare_resume
@@ -14,6 +15,14 @@ app = FastAPI()
 @app.get('/')
 def index():
     return {'msg': 'Resume-Help App'}
+
+#------------------------------------------------#
+
+@app.get('/view')
+def view():
+    res_text = extract_text_from_pdf(file_path)
+    view = improve_resume(res_text)
+    return {"view": view}
 
 #------------------------------------------------#
 
