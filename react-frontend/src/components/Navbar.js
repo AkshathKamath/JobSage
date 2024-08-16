@@ -9,6 +9,9 @@ const NavbarComponent = () => {
         <img src="./ResumeSage_logo.png" className="logo mx-2"></img>
         ResumeSage
       </NavbarBrand>
+      <NavbarBrand href="/view" className="fs-6 mx-10">
+        View
+      </NavbarBrand>
       <NavbarBrand href="/summarize" className="fs-6 mx-10">
         Summarize
       </NavbarBrand>
