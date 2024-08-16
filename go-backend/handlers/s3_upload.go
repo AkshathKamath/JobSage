@@ -46,6 +46,8 @@ func S3UploadHandler(c *gin.Context)  {
         Key:           aws.String(key),
         Body:          file,
         ContentLength: aws.Int64(header.Size),
+        ContentType:          aws.String("application/pdf"),
+        ContentDisposition:   aws.String("inline"),
     })
     if err != nil {
         c.JSON(http.StatusInternalServerError, gin.H{"error": "Could not upload file to S3"})
