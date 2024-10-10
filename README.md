@@ -38,7 +38,36 @@ To set up JobSage locally, follow these steps:
    ```bash
    git clone git@github.com:AkshathKamath/JobSage.git
    ```
-2.
+2. ```bash
+   cd react-frontend/
+   ```
+3. ```bash
+   npm install
+   ```
+4. ```bash
+   cd ../
+   ```
+5. ```bash
+   cd go-backend/
+   ```
+6. ```bash
+    go mod tidy
+   ```
+7. ```bash
+   cd ../
+   ```
+8. ```bash
+   cd python-gpt-api/
+   ```
+9. ```bash
+   python -m venv venv
+   ```
+10. ```bash
+    source venv/bin/activate
+    ```
+11. ```bash
+    pip install -r requirements.txt
+    ```
 
 ## Contributing
 
