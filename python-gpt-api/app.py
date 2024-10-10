@@ -22,6 +22,7 @@ def index():
 def view():
     res_text = extract_text_from_pdf(file_path)
     view = improve_resume(res_text)
+    view = convert_to_json(view)
     return {"view": view}
 
 #------------------------------------------------#
