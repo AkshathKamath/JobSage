@@ -40,34 +40,18 @@ To set up JobSage locally, follow these steps:
    ```
 2. ```bash
    cd react-frontend/
-   ```
-3. ```bash
    npm install
    ```
+3. ```bash
+   cd ../go-backend/
+   go mod tidy
+   ```
 4. ```bash
-   cd ../
-   ```
-5. ```bash
-   cd go-backend/
-   ```
-6. ```bash
-    go mod tidy
-   ```
-7. ```bash
-   cd ../
-   ```
-8. ```bash
-   cd python-gpt-api/
-   ```
-9. ```bash
+   cd ../python-gpt-api/
    python -m venv venv
+   source venv/bin/activate
+   pip install -r requirements.txt
    ```
-10. ```bash
-    source venv/bin/activate
-    ```
-11. ```bash
-    pip install -r requirements.txt
-    ```
 
 ## Usage
 
