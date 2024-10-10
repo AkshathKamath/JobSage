@@ -69,6 +69,21 @@ To set up JobSage locally, follow these steps:
     pip install -r requirements.txt
     ```
 
+## Usage
+
+1. ```bash
+   cd python-gpt-api/
+   python3 app.py
+   ```
+2. ```bash
+   cd go-backend/
+   go run ./cmd/api
+   ```
+3. ```bash
+   cd react-frontend/
+   npm start
+   ```
+
 ## Contributing
 
 Contributions are welcome! If you have suggestions for improvements or additional features, please fork the repository and submit a pull request.
