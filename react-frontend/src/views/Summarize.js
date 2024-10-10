@@ -11,11 +11,8 @@ const SummaryPage = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // const response = await axios.get(
-        //   "https://resume-help-backend.vercel.app/summary"
-        // );
         const response = await axios.get(
-          "https://resumesage-backend-production.up.railway.app/summarize"
+          "https://resumesage-backend-v3-production.up.railway.app/summarize"
         );
         setData(response.data);
         setLoading(false);

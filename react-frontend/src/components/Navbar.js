@@ -6,8 +6,8 @@ const NavbarComponent = () => {
   return (
     <Navbar bg="dark" variant="dark">
       <NavbarBrand href="/" className="mx-4">
-        <img src="./ResumeSage_logo.png" className="logo mx-2"></img>
-        ResumeSage
+        <img src="./jobsage_logo.jpg" className="logo mx-2"></img>
+        JobSage
       </NavbarBrand>
       <NavbarBrand href="/view" className="fs-6 mx-10">
         View
@@ -17,6 +17,9 @@ const NavbarComponent = () => {
       </NavbarBrand>
       <NavbarBrand href="/score" className="fs-6">
         JD-Score
+      </NavbarBrand>
+      <NavbarBrand href="/connect" className="fs-6 mx-10">
+        Connect
       </NavbarBrand>
     </Navbar>
   );

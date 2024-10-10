@@ -4,6 +4,7 @@ import HomePage from "./views/Home";
 import ViewPage from "./views/View";
 import SummaryPage from "./views/Summarize";
 import ScorePage from "./views/Score";
+import ConnectPage from "./views/Connect";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/view" element={<ViewPage />} />
         <Route path="/summarize" element={<SummaryPage />} />
         <Route path="/score" element={<ScorePage />} />
+        <Route path="/connect" element={<ConnectPage />} />
       </Routes>
     </div>
   );

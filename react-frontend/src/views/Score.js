@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import { Container, Card, Spinner, Form, Button } from "react-bootstrap";
 import "../App.css";
@@ -21,15 +21,8 @@ const ScorePage = () => {
     setLoading(true);
 
     try {
-      // const response = await axios.post(
-      //   "https://resume-help-backend.vercel.app/score",
-      //   {
-      //     role: jobRole,
-      //     jd: jobDescription,
-      //   }
-      // );
       const response = await axios.post(
-        "https://resumesage-backend-production.up.railway.app/score",
+        "https://resumesage-backend-v3-production.up.railway.app/score",
         {
           role: jobRole,
           jd: jobDescription,
